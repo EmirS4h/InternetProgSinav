@@ -1,0 +1,61 @@
+﻿body {
+}
+.btn {
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    border: none;
+}
+.tiklaBtn {
+    background-image: linear-gradient(to right top, #f72b74, #fc4169, #ff5460, #ff6559, #ff7653);
+}
+.gndrBtn {
+    background-image: linear-gradient(to right top, #b70099, #a009a1, #8516a8, #6320ad, #3128b1);
+}
+.appBtn {
+    background-image: linear-gradient(to right top, #00b7c8, #00bec4, #00c4bd, #00cab3, #00cfa7);
+}
+.sessionBtn {
+    background-image: linear-gradient(to right top, #944da5, #e25991, #ff8172, #ffbb5d, #f9f871);
+}
+.ekleBtn {
+    background-image: linear-gradient(to right top, #00a199, #00aba2, #00b5ab, #00bfb5, #00c9be);
+}
+.silBtn {
+    background-image: linear-gradient(to right top, #b1286d, #bc2f6b, #c63668, #cf3f65, #d84862);
+}
+.brBtn {
+    background-image: linear-gradient(to right top, #b12840, #bf2b46, #ce2f4b, #dc3251, #eb3657);
+}
+.boldwhitetxt {
+    font-weight: bold;
+    color: whitesmoke;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.2);
+}
+.divcls {
+    padding: 5px;
+    width: 25%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.2);
+}
+.maindiv {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 95%;
+    height: 930px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px 4px rgba(0,0,0,0.2);
+    justify-content: space-around;
+}
+.gradient-border {
+    background-image: radial-gradient(circle at 100% 100%, transparent 1px, #d50000 1px, #d50000 4px, transparent 4px), linear-gradient(to right, #d50000, #304ffe), radial-gradient(circle at 0% 100%, transparent 1px, #304ffe 1px, #304ffe 4px, transparent 4px), linear-gradient(to bottom, #304ffe, #00bfa5), radial-gradient(circle at 0% 0%, transparent 1px, #00bfa5 1px, #00bfa5 4px, transparent 4px), linear-gradient(to left, #00bfa5, #ffd600), radial-gradient(circle at 100% 0%, transparent 1px, #ffd600 1px, #ffd600 4px, transparent 4px), linear-gradient(to top, #ffd600, #d50000);
+    background-size: 4px 4px, calc(100% - 8px) 3px, 4px 4px, 3px calc(100% - 8px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+}

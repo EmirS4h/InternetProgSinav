@@ -22,10 +22,49 @@ namespace InternetProgSinav
 
         protected void GonderBtn_Click1(object sender, EventArgs e)
         {
-            string username = KullaniciAdiInput.Text;
-            string password = SifreInput.Text;
+            Response.Redirect("UserDetails.aspx");
+        }
 
-            Response.Redirect("UserDetails.aspx" + username + password);
+        protected void AppGonderBtn_Click(object sender, EventArgs e)
+        {
+            Application.Add("KullaniciAdi", KullaniciAdi.Text);
+            Application.Add("KullaniciSoyadi", KullaniciSoyadi.Text);
+            Response.Redirect("UserDetails.aspx");
+        }
+
+        protected void SessionGonderBtn_Click(object sender, EventArgs e)
+        {
+            Session.Add("Kadi", Kadi.Text);
+            Session.Add("Ksoadi", Ksoadi.Text);
+            Response.Redirect("UserDetails.aspx");
+        }
+
+        protected void SayiEkleBtn_Click(object sender, EventArgs e)
+        {
+            SayiBox.Items.Clear();
+            int sayi = Convert.ToInt32(SayiInput.Text);
+
+            for (int i = 0; i < sayi; i++)
+            {
+                SayiBox.Items.Add(i.ToString());
+            }
+        }
+        protected void SayiSilBtn_Click(object sender, EventArgs e)
+        {
+            if (SayiBox.Items.Count > 0)
+            {
+                SayiBox.Items.RemoveAt(0);
+            }
+        }
+        protected void BirdenFazlaSilBtn_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                if (SayiBox.Items.Count > 0)
+                {
+                    SayiBox.Items.RemoveAt(0);
+                }
+            }
         }
     }
 }
