@@ -9,8 +9,8 @@
 </head>
 <body>
     <form id="form1" runat="server" method="post">
+        <h1 style="text-align:center;">INTERNET PROGRAMCILIGI-II SINAV HAZIRLIK</h1>
         <div class="maindiv">
-
             <div class="divcls gradient-border">
                 <h2>TextBoxdan input alma</h2>
                 <asp:TextBox ID="UsernameInput" runat="server"></asp:TextBox>
