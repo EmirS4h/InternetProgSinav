@@ -54,9 +54,14 @@
             <div class="divcls gradient-border">
                 <h2>Sayı Ekleme ve Silme</h2>
                 <div style="display: flex; align-items: center;">
-                    <asp:ListBox ID="SayiBox" runat="server" Width="150px" Height="200px"></asp:ListBox>
-                    <asp:TextBox ID="SayiInput" runat="server"></asp:TextBox>
-                    <div style="display:flex; flex-direction:column;">
+                    <div>
+                        <asp:Label ID="SayiEklemeHata" runat="server" Text="Lütfen Bir Sayı Giriniz" Visible="false" ForeColor="Red"></asp:Label>
+                    </div>
+                    <div>
+                        <asp:ListBox ID="SayiBox" runat="server" Width="150px" Height="200px"></asp:ListBox>
+                        <asp:TextBox ID="SayiInput" runat="server"></asp:TextBox>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
                         <asp:Button CssClass="ekleBtn boldwhitetxt btn" ID="SayiEkleBtn" runat="server" Text="EKLE" OnClick="SayiEkleBtn_Click" />
                         <asp:Button CssClass="silBtn boldwhitetxt btn" ID="SayiSilBtn" runat="server" Text="SİL" OnClick="SayiSilBtn_Click" />
                         <asp:Button CssClass="brBtn boldwhitetxt btn" ID="BirdenFazlaSilBtn" runat="server" Text="Birden Fazla Sil" OnClick="BirdenFazlaSilBtn_Click" />
@@ -64,6 +69,28 @@
                 </div>
             </div>
 
+            <div class="divcls gradient-border">
+                <h2>Çift veya Tek Sayı Ekleme</h2>
+                <div style="display: flex; align-items: center;">
+                    <div>
+                        <asp:Label ID="tekcifthata" runat="server" Text="Lütfen Bir Sayı Giriniz" Visible="false" ForeColor="Red"></asp:Label>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column;">
+                        <asp:ListBox ID="ciftTekBox" runat="server" Width="150px" Height="200px"></asp:ListBox>
+                        <asp:TextBox ID="ciftTekRange" runat="server"></asp:TextBox>
+                    </div>
+                    <asp:Label ID="radioSelect" runat="server" Text="Lütfen Birini Seçin" Visible="false" ForeColor="Red"></asp:Label>
+                    <asp:RadioButtonList ID="tekCiftList" runat="server">
+                        <asp:ListItem>Tek</asp:ListItem>
+                        <asp:ListItem>Çift</asp:ListItem>
+                    </asp:RadioButtonList>
+
+                    <div>
+                        <asp:Button CssClass="tkCtBtn boldwhitetxt btn" ID="tekCiftBtn" runat="server" Text="EKLE" OnClick="TekCiftBtn_Click" />
+                    </div>
+                </div>
+            </div>
         </div>
     </form>
 </body>

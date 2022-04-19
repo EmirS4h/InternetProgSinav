@@ -26,6 +26,9 @@
 .brBtn {
     background-image: linear-gradient(to right top, #b12840, #bf2b46, #ce2f4b, #dc3251, #eb3657);
 }
+.tkCtBtn {
+    background-image: linear-gradient(to right top, #e8bc0c, #72b042, #009370, #006e79, #2f4858);
+}
 .boldwhitetxt {
     font-weight: bold;
     color: whitesmoke;

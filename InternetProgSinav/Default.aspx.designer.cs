@@ -213,6 +213,15 @@ namespace InternetProgSinav
         protected global::System.Web.UI.WebControls.Button SessionGonderBtn;
 
         /// <summary>
+        /// SayiEklemeHata control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label SayiEklemeHata;
+
+        /// <summary>
         /// SayiBox control.
         /// </summary>
         /// <remarks>
@@ -256,5 +265,59 @@ namespace InternetProgSinav
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BirdenFazlaSilBtn;
+
+        /// <summary>
+        /// tekcifthata control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label tekcifthata;
+
+        /// <summary>
+        /// ciftTekBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ciftTekBox;
+
+        /// <summary>
+        /// ciftTekRange control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ciftTekRange;
+
+        /// <summary>
+        /// radioSelect control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label radioSelect;
+
+        /// <summary>
+        /// tekCiftList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList tekCiftList;
+
+        /// <summary>
+        /// tekCiftBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button tekCiftBtn;
     }
 }

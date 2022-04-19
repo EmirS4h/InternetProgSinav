@@ -13,7 +13,18 @@ namespace InternetProgSinav
         {
             if (Session["Kadi"] != null)
             {
-                SecretName.Text = Session["Kadi"].ToString();
+                if (Session["Kadi"].ToString() == "Emircan")
+                {
+                    SecretName.Text = Session["Kadi"].ToString();
+                }
+                else
+                {
+                    SecretName.Text = "HATA";
+                }
+            }
+            else
+            {
+                Response.Redirect("Default.aspx");
             }
         }
     }
